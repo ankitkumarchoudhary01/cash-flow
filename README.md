@@ -1,8 +1,8 @@
-# Expense Tracker
+# Cash FLow
 
 ## Overview
 
-Expense Tracker is a responsive web application built using HTML, CSS, and Vanilla JavaScript that helps users manage their personal finances. Users can enter their salary, add multiple expenses, monitor their remaining balance, visualize spending through a pie chart, generate PDF reports, and switch between multiple currencies using a live exchange rate API.
+Cash Flow is a responsive web application built using HTML, CSS, and Vanilla JavaScript that helps users manage their personal finances. Users can enter their salary, add multiple expenses, monitor their remaining balance, visualize spending through a pie chart, generate PDF reports, and switch between multiple currencies using a live exchange rate API.
 
 This project was developed as part of Sprint 02, which focuses on JavaScript fundamentals including DOM manipulation, event handling, state management, localStorage, and third-party library integration.
 
