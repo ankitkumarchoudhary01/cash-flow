@@ -44,15 +44,17 @@
             </section>
 
             <section id="dashboard">
+                <div class="dashboard-header">
+                    <h2>Expense Summary</h2>
+                    <button><a href="#chart-card">View Analytics</a>  
+                </div>
 
                 <div class="card">
-                    <h2>Expense Summary</h2>
-
                     <h3>Salary</h3>
                     <p id="salaryDisplay">₹0</p>
                 </div>
 
-                <div class="card expenseList">
+                <div class="expenseList">
                     <h3>Expense List</h3>
                     <ul id="expenseList">
                         <li class="empty-state">No expenses added yet.</li>
@@ -72,11 +74,18 @@
             </section>
         </div>
 
+        <section id="chart-card" class="chart-card">
+            <h3 for="expenseChart">Expense Chart</h3>
+            <p id="chartMessage">Enter your expenses to view the chart.</p>
+            <canvas id="expenseChart"></canvas>
+        </section>
+
         <div class="reset-container">
             <button id="resetButton" class="reset-button">Reset</button>
         </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script src="script.js"></script>
 </body>
