@@ -1,0 +1,254 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f5f5f5;
+    color: #1a1a1a;
+    line-height: 1.5;
+}
+
+/* Header */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Main Layout */
+main{
+    display: grid;
+    grid-template-rows: repeat(2);
+    align-content: center;
+}
+
+main .output {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 35px;
+}
+
+/* Cards */
+
+#inputForm,
+#dashboard {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+#dashboard{
+    min-width: 500px;
+}
+/* Form */
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Inputs */
+
+input {
+    width: 100%;
+    padding: 13px 15px;
+    align-self: center;
+    font-size: 15px;
+
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+
+    background: #fafafa;
+
+    transition: all .25s ease;
+}
+
+input::placeholder {
+    color: #9a9a9a;
+}
+
+input:focus {
+    outline: none;
+    border-color: #111;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(0,0,0,.06);
+}
+
+/* Button */
+
+button {
+    margin-top: 8px;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #111;
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+button:hover {
+    background: #2b2b2b;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(.98);
+}
+
+.reset-button {
+    margin-top: 4px;
+    align-self: center;
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #e74c3c;
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+.reset-container {
+    display: flex;
+    justify-content: center;
+}
+/* Output */
+
+#details h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+#details p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 12px;
+}
+
+#expenseList {
+    min-height: 250px;
+    max-height: 250px;     
+    color: #666;
+    
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch;   
+    justify-content: flex-start; 
+
+    border: 2px dashed #ddd;
+    border-radius: 10px;
+    background: #fcfcfc;
+
+    overflow-y: auto;  
+    overflow-x: hidden;
+}
+
+#expenseList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 12px 15px;
+    border-bottom: 1px solid #ececec;
+    width: 100%;
+    list-style: none;
+}
+
+.delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+
+    background: #111;
+    color: #fff;
+
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: #444;
+}
+
+#expenseList li:last-child {
+    border-bottom: none;
+}
+
+#expenseList::-webkit-scrollbar {
+    width: 8px;
+}
+
+#expenseList::-webkit-scrollbar-thumb {
+    background: #cfcfcf;
+    border-radius: 10px;
+}
+
+#expenseList::-webkit-scrollbar-thumb:hover {
+    background: #b5b5b5;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #inputForm,
+    #Details {
+        padding: 24px;
+    }
+}
