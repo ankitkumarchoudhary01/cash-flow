@@ -161,7 +161,7 @@ git clone <repository-url>
 Navigate to the project directory
 
 ```bash
-cd demo-form
+cd cash-flow
 ```
 
 Open the project using Live Server or any local development server.
